@@ -13,6 +13,13 @@ import UIKit
 class ViewControllerTabs: UIViewController{
     
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        tabBarItem = UITabBarItem(title: "Notas", image: UIImage(named: "atack_img"), tag: 1)
+    }
+
+    
+    
     
     @IBOutlet weak var finalizar: UIButton!
     

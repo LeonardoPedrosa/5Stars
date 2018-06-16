@@ -116,7 +116,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Meus Mobs" id="hi1-Uj-IlM"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Meus Mobs" image="def_img" id="hi1-Uj-IlM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U7D-AK-bE9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -133,13 +133,37 @@
                     <view key="view" contentMode="scaleToFill" id="ewT-CV-ID6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leonardo Pedrosa" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kC3-fF-T94">
+                                <rect key="frame" x="82" y="234" width="210" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="leonardohfpedrosa@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ph2-Ce-ac9">
+                                <rect key="frame" x="68" y="280" width="239" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kC3-fF-T94" firstAttribute="leading" secondItem="ewT-CV-ID6" secondAttribute="leadingMargin" constant="66" id="3iv-tT-bHF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ph2-Ce-ac9" secondAttribute="trailing" constant="52" id="dSE-8H-oek"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kC3-fF-T94" secondAttribute="trailing" constant="67" id="eky-B0-TPg"/>
+                            <constraint firstItem="ph2-Ce-ac9" firstAttribute="leading" secondItem="ewT-CV-ID6" secondAttribute="leadingMargin" constant="52" id="jqF-F2-Ibw"/>
+                            <constraint firstItem="ph2-Ce-ac9" firstAttribute="top" secondItem="kC3-fF-T94" secondAttribute="bottom" constant="16" id="l5I-OR-RbK"/>
+                            <constraint firstItem="ph2-Ce-ac9" firstAttribute="top" secondItem="kC3-fF-T94" secondAttribute="bottom" constant="16" id="ll9-RH-KIF"/>
+                            <constraint firstItem="kC3-fF-T94" firstAttribute="top" secondItem="wdt-w3-E8F" secondAttribute="bottom" constant="214" id="p4h-2h-ZQZ"/>
+                            <constraint firstItem="k7C-JR-CFv" firstAttribute="top" secondItem="ph2-Ce-ac9" secondAttribute="bottom" constant="317" id="pla-Ac-DuJ"/>
+                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Meus Reps" id="WcN-fI-w8E"/>
+                    <tabBarItem key="tabBarItem" title="Meus Reps" image="atack_img" id="WcN-fI-w8E"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OXR-wA-4Ae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2201" y="1164"/>
+            <point key="canvasLocation" x="2200.8000000000002" y="1163.568215892054"/>
         </scene>
         <!--Home-->
         <scene sceneID="ds8-f2-iAw">
@@ -149,7 +173,7 @@
                         <viewControllerLayoutGuide type="top" id="lXa-ba-4pf"/>
                         <viewControllerLayoutGuide type="bottom" id="3Jw-bS-wK8"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="gAZ-6x-XpU" customClass="ViewC">
+                    <view key="view" contentMode="scaleToFill" id="gAZ-6x-XpU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -407,7 +431,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="atack_img" width="40" height="40"/>
         <image name="dark_icon" width="63" height="61"/>
+        <image name="def_img" width="40" height="40"/>
         <image name="dragon_icon" width="750" height="650"/>
         <image name="fire_icon" width="66" height="65"/>
         <image name="giant_icon" width="750" height="650"/>

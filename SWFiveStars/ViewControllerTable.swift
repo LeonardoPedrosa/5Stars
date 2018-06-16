@@ -10,6 +10,13 @@ import UIKit
 
 class ViewControllerTable: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        tabBarItem = UITabBarItem(title: "Lista", image: UIImage(named: "def_img"), tag: 2)
+    }
+    
+
+    
     let meusMobs = ["Ifrit","Theo","Beth","Verad","Chow","Camile"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
