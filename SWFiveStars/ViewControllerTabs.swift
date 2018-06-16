@@ -23,6 +23,7 @@ class ViewControllerTabs: UIViewController{
     
     @IBOutlet weak var finalizar: UIButton!
     
+    @IBOutlet weak var nome: UILabel!
     
     @IBOutlet weak var mob_name: UITextField!
     

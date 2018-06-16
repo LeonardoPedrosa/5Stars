@@ -10,6 +10,8 @@ import UIKit
 
 class ViewControllerTable: UIViewController, UITableViewDelegate, UITableViewDataSource{
     
+    var nome: String?
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         tabBarItem = UITabBarItem(title: "Lista", image: UIImage(named: "def_img"), tag: 2)
