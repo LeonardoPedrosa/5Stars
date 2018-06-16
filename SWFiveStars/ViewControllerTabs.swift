@@ -10,13 +10,12 @@ import UIKit
 
 
 
-class ViewControllerTabs: UIViewController {
+class ViewControllerTabs: UIViewController{
     
     
     
     @IBOutlet weak var finalizar: UIButton!
     
-    @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var mob_name: UITextField!
     

@@ -15,6 +15,7 @@
 		81350B2120A7133C00FB78D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81350B1F20A7133C00FB78D2 /* LaunchScreen.storyboard */; };
 		81350B2B20A7201B00FB78D2 /* ViewControllerTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81350B2A20A7201B00FB78D2 /* ViewControllerTabs.swift */; };
 		816621A920D53865005085A6 /* ViewControllerNext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816621A820D53865005085A6 /* ViewControllerNext.swift */; };
+		816621AB20D55266005085A6 /* ViewControllerTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816621AA20D55266005085A6 /* ViewControllerTable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		81350B2220A7133C00FB78D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81350B2A20A7201B00FB78D2 /* ViewControllerTabs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTabs.swift; sourceTree = "<group>"; };
 		816621A820D53865005085A6 /* ViewControllerNext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerNext.swift; sourceTree = "<group>"; };
+		816621AA20D55266005085A6 /* ViewControllerTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				81350B1320A7133C00FB78D2 /* AppDelegate.swift */,
 				81350B1520A7133C00FB78D2 /* ViewController.swift */,
 				81350B1720A7133C00FB78D2 /* Main.storyboard */,
+				816621AA20D55266005085A6 /* ViewControllerTable.swift */,
 				816621A820D53865005085A6 /* ViewControllerNext.swift */,
 				81350B1D20A7133C00FB78D2 /* Assets.xcassets */,
 				81350B1F20A7133C00FB78D2 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				81350B2B20A7201B00FB78D2 /* ViewControllerTabs.swift in Sources */,
 				81350B1620A7133C00FB78D2 /* ViewController.swift in Sources */,
 				81350B1C20A7133C00FB78D2 /* SWFiveStars.xcdatamodeld in Sources */,
+				816621AB20D55266005085A6 /* ViewControllerTable.swift in Sources */,
 				816621A920D53865005085A6 /* ViewControllerNext.swift in Sources */,
 				81350B1420A7133C00FB78D2 /* AppDelegate.swift in Sources */,
 			);
