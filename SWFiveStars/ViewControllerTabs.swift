@@ -8,24 +8,53 @@
 
 import UIKit
 
+
+
 class ViewControllerTabs: UIViewController {
+    
+    
+    
     @IBOutlet weak var finalizar: UIButton!
     
+    @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var mob_name: UITextField!
+    
+    @IBOutlet weak var farm: UITextField!
+    
+    @IBOutlet weak var gb: UITextField!
+    
+    @IBOutlet weak var dg: UITextField!
     
     override func viewDidLoad() {
-        
+     
        
         super.viewDidLoad()
         self.finalizar.backgroundColor = UIColor.white
         
         // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
+    
+    
+       
+        
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            guard let proxView = segue.destination as? ViewControllerNext else {
+                print("Deu errado")
+                return
+            }
+            proxView.mob = self.mob_name.text
+            proxView.farm_ = self.farm.text
+            proxView.gb_ = self.gb.text
+            proxView.dg_ = self.dg.text
+        }
+        
+       override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
         // Dispose of any resources that can be recreated.
     }
+    
     
 
 }

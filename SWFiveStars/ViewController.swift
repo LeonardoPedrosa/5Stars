@@ -44,6 +44,17 @@ class ViewController: UIViewController {
         }
         
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Usuario")
+        
+        //DELETANDO DADOS DO COREDATA
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: request)
+        
+        let persistentContainer = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
+        
+        do {
+            try persistentContainer.viewContext.execute(deleteRequest)
+        } catch let error as NSError {
+            print(error)
+        }
         request.returnsObjectsAsFaults = false
         do {
             let result = try context.fetch(request)
